@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PVS International - Brochure</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--g1:#1a4d2e;--g2:#2e7d32;--g3:#43a047;--gold:#d4940a;--gold-l:#f5c842;--cream:#faf8f2;--dark:#1a1a1a;--text:#333;--muted:#6b7a8d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#444;font-family:'Inter',sans-serif;color:var(--text);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:297mm;height:210mm;background:var(--cream);margin:8mm auto;display:flex;position:relative;overflow:hidden;box-shadow:0 8px 40px rgba(0,0,0,.5)}
+.half{width:50%;height:100%;position:relative;overflow:hidden}
+
+/* ===== PAGE 1 — COVER ===== */
+.cover-left{background:var(--g1);color:#fff;padding:22mm 18mm;display:flex;flex-direction:column}
+.cover-left .logo-img{width:70mm;margin-bottom:auto;filter:brightness(0) saturate(100%) invert(62%) sepia(85%) saturate(500%) hue-rotate(5deg) brightness(95%)}
+.cover-left h1{font-size:38pt;font-weight:900;line-height:1.05;text-transform:uppercase;letter-spacing:-1px}
+.cover-left h1 span{color:var(--gold-l)}
+.cover-left .tagline{font-size:11pt;font-weight:300;color:rgba(255,255,255,.75);margin-top:6mm;line-height:1.5}
+.cover-left .certs{display:flex;gap:4mm;margin-top:8mm}
+.cert-pill{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:2mm 5mm;border-radius:20px;font-size:7.5pt;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-l)}
+.cover-right{background-image:url('hero_bg.png');background-size:cover;background-position:center}
+.cover-right::after{content:'';position:absolute;inset:0;background:linear-gradient(to right,var(--g1) 0%,transparent 35%)}
+
+/* ===== PAGE 2 — ABOUT & CONTACT ===== */
+.about-left{padding:18mm 16mm;display:flex;flex-direction:column;background:#fff}
+.about-right{background:var(--g1);color:#fff;padding:18mm 16mm;display:flex;flex-direction:column}
+.sec-label{font-size:7pt;font-weight:800;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:3mm}
+.sec-title{font-size:18pt;font-weight:800;color:var(--g1);margin-bottom:5mm;line-height:1.2}
+.sec-title.white{color:#fff}
+.sec-bar{width:25mm;height:3px;background:var(--gold);margin-bottom:5mm;border-radius:2px}
+p.body{font-size:9pt;line-height:1.7;color:var(--muted);margin-bottom:4mm}
+p.body.white{color:rgba(255,255,255,.8)}
+.check-list{list-style:none;margin:4mm 0}
+.check-list li{font-size:9pt;padding:2mm 0 2mm 7mm;position:relative;color:var(--text);font-weight:500}
+.check-list li::before{content:'✓';position:absolute;left:0;color:var(--g2);font-weight:800}
+.check-list.white li{color:rgba(255,255,255,.9)}
+.check-list.white li::before{color:var(--gold-l)}
+.quote-block{background:rgba(255,255,255,.08);border-left:3px solid var(--gold);padding:5mm 6mm;margin:5mm 0;border-radius:0 6px 6px 0}
+.quote-block p{font-size:10pt;font-style:italic;color:rgba(255,255,255,.9);font-weight:500;line-height:1.5;margin:0}
+.contact-grid{margin-top:auto}
+.contact-row{display:flex;gap:3mm;margin-bottom:3mm;font-size:9pt}
+.contact-row strong{width:18mm;color:var(--gold-l);font-weight:700;flex-shrink:0}
+.contact-row span{color:rgba(255,255,255,.85)}
+.bottom-logo{margin-top:5mm;width:50mm;filter:brightness(0) saturate(100%) invert(62%) sepia(85%) saturate(500%) hue-rotate(5deg) brightness(95%)}
+
+/* ===== PAGE 3 — PRODUCTS (Dehydrated) ===== */
+.prod-left{padding:16mm 14mm;display:flex;flex-direction:column;background:#fff}
+.prod-right{padding:16mm 14mm;display:flex;flex-direction:column;background:var(--cream)}
+.prod-grid{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin:3mm 0}
+.prod-card{border-radius:6px;overflow:hidden;position:relative;height:38mm}
+.prod-card img{width:100%;height:100%;object-fit:cover}
+.prod-card .card-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.75),transparent);padding:3mm 4mm 2mm;color:#fff;font-size:7.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.spec-table{width:100%;border-collapse:collapse;font-size:7.5pt;margin:3mm 0}
+.spec-table th{background:var(--g1);color:#fff;padding:2.5mm 3mm;text-align:left;font-weight:700;text-transform:uppercase;letter-spacing:.05em;font-size:7pt}
+.spec-table td{padding:2mm 3mm;border-bottom:1px solid rgba(0,0,0,.06)}
+.spec-table tr:nth-child(even) td{background:rgba(0,0,0,.02)}
+h3.prod-sub{font-size:11pt;font-weight:700;color:var(--g1);margin:5mm 0 2mm;text-transform:uppercase}
+
+/* ===== PAGE 4 — SPICES & HONEY ===== */
+.spice-grid{display:grid;grid-template-columns:1fr 1fr;gap:3mm;margin:3mm 0}
+.spice-card{border-radius:6px;overflow:hidden;position:relative;height:34mm}
+.spice-card img{width:100%;height:100%;object-fit:cover}
+.spice-card .card-label{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.75),transparent);padding:3mm 4mm 2mm;color:#fff;font-size:7.5pt;font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+
+/* ===== PAGE 5 — WHY CHOOSE US & CTA ===== */
+.why-left{padding:18mm 16mm;display:flex;flex-direction:column;background:#fff}
+.why-right{background:var(--g1);color:#fff;padding:18mm 16mm;display:flex;flex-direction:column}
+.benefit-item{display:flex;gap:4mm;margin-bottom:5mm}
+.benefit-num{width:10mm;height:10mm;border-radius:50%;background:rgba(46,125,50,.1);color:var(--g2);font-size:12pt;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.benefit-text h4{font-size:10pt;font-weight:700;color:var(--g1);margin-bottom:1mm}
+.benefit-text p{font-size:8.5pt;color:var(--muted);line-height:1.5;margin:0}
+.cta-box{background:var(--gold);border-radius:8px;padding:8mm 10mm;text-align:center;margin-top:auto;color:var(--dark)}
+.cta-box h3{font-size:16pt;font-weight:800;margin-bottom:3mm}
+.cta-box p{font-size:10pt;margin:0;font-weight:500}
+.stat-row{display:flex;gap:4mm;margin-top:auto;margin-bottom:6mm}
+.stat-box{flex:1;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);border-radius:8px;padding:4mm;text-align:center}
+.stat-box .num{font-size:18pt;font-weight:900;color:var(--gold-l)}
+.stat-box .lbl{font-size:7pt;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.65);margin-top:1mm}
+
+@media print{body{background:none}.page{margin:0;box-shadow:none;page-break-after:always}}
+</style>
+</head>
+<body>
+
+<!-- ═══════ PAGE 1: COVER ═══════ -->
+<div class="page">
+  <div class="half cover-left">
+    <img src="pvs_international_logo_transparent.png" alt="PVS International" class="logo-img">
+    <h1>Premium <span>Global</span> Exports</h1>
+    <p class="tagline">Farm-fresh Dehydrated Onion & Garlic, Authentic Ground Spices, and Pure Wild Forest Honey — delivered worldwide from the heart of Gujarat, India.</p>
+    <div class="certs">
+      <span class="cert-pill">FSSAI</span>
+      <span class="cert-pill">IEC</span>
+      <span class="cert-pill">APEDA</span>
+      <span class="cert-pill">ISO</span>
+    </div>
+  </div>
+  <div class="half cover-right"></div>
+</div>
+
+<!-- ═══════ PAGE 2: ABOUT & CONTACT ═══════ -->
+<div class="page">
+  <div class="half about-left">
+    <span class="sec-label">About Us</span>
+    <div class="sec-title">Cultivating Excellence for the Global Market</div>
+    <div class="sec-bar"></div>
+    <p class="body">PVS International is a premier merchant exporter based in Gujarat, India, specializing in top-tier dehydrated onion, dehydrated garlic, authentic ground spices, and pure wild forest honey.</p>
+    <p class="body">Founded with a vision to connect local farms with international markets, we ensure that every flake, granule, powder, and jar of honey retains its natural essence. Our state-of-the-art processing facilities and stringent quality control measures guarantee that our products meet the highest global standards.</p>
+    <ul class="check-list">
+      <li>Ethically sourced from sustainable farms in Mahuva, Gujarat</li>
+      <li>Advanced cold-chain dehydration technology</li>
+      <li>Uncompromising hygiene & food safety standards</li>
+      <li>Timely global delivery via Mundra Port</li>
+      <li>Custom packaging & private labelling available</li>
+      <li>Bulk supply: 20-ft container = 18–20 MT capacity</li>
+    </ul>
+    <div style="margin-top:auto;display:flex;gap:3mm">
+      <img src="b_pink_onion.png" style="width:50%;height:40mm;object-fit:cover;border-radius:6px">
+      <img src="b_garlic.png" style="width:50%;height:40mm;object-fit:cover;border-radius:6px">
+    </div>
+  </div>
+  <div class="half about-right">
+    <span class="sec-label" style="color:var(--gold-l)">Our Mission & Vision</span>
+    <div class="sec-title white">Delivering Sustainable Agricultural Excellence</div>
+    <div class="sec-bar"></div>
+    <p class="body white"><strong>Mission:</strong> To deliver premium, tailor-made agricultural products designed to meet the unique needs of the global food industry — ensuring superior flavor, aroma, and shelf-life for food manufacturers, spice blenders, and culinary businesses worldwide.</p>
+    <p class="body white"><strong>Vision:</strong> To become a globally leading exporter of premium dehydrated vegetables and spices, renowned for exceeding customer expectations through uncompromising quality and sustainable farming practices.</p>
+    <div class="quote-block">
+      <p>"Empowering global tastes with premium, sustainable agricultural exports for a healthier tomorrow."</p>
+    </div>
+    <div class="contact-grid">
+      <span class="sec-label" style="color:var(--gold-l);margin-top:5mm">Contact Us</span>
+      <div class="contact-row"><strong>Address</strong><span>Tulsi Arcade, Mota Varachha, Surat, Gujarat, India.</span></div>
+      <div class="contact-row"><strong>Port</strong><span>Mundra, Gujarat</span></div>
+      <div class="contact-row"><strong>Phone</strong><span>+91 90819 73308 / +91 94261 73308</span></div>
+      <div class="contact-row"><strong>Email</strong><span>pvsexporter@gmail.com</span></div>
+      <div class="contact-row"><strong>Website</strong><span>https://sites.google.com/view/pvs-international/home</span></div>
+      <img src="pvs_international_logo_transparent.png" alt="Logo" class="bottom-logo">
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 3: DEHYDRATED PRODUCTS ═══════ -->
+<div class="page">
+  <div class="half prod-left">
+    <span class="sec-label">Product Range</span>
+    <div class="sec-title">Dehydrated Onion</div>
+    <div class="sec-bar"></div>
+    <p class="body">Available in two premium varieties — <strong>Pink Onion</strong> and <strong>White Onion</strong>. Sourced from the finest growing regions of Gujarat (Mahuva), each variant offers distinct flavor profiles suited for diverse culinary and industrial applications worldwide.</p>
+    <div class="prod-grid">
+      <div class="prod-card"><img src="b_pink_onion.png" alt="Pink Onion"><div class="card-label">Pink Onion Chopped</div></div>
+      <div class="prod-card"><img src="b_white_onion.png" alt="White Onion"><div class="card-label">White Onion Flakes</div></div>
+      <div class="prod-card"><img src="b_onion.png" alt="Onion Flakes"><div class="card-label">Onion Flakes</div></div>
+      <div class="prod-card"><img src="brochure_img2.png" alt="Onion Chopped"><div class="card-label">Onion Chopped</div></div>
+    </div>
+    <table class="spec-table">
+      <tr><th>Parameter</th><th>Pink Onion</th><th>White Onion</th></tr>
+      <tr><td>Forms Available</td><td>Flakes, Chopped, Minced, Granules, Powder</td><td>Flakes, Chopped, Minced, Granules, Powder</td></tr>
+      <tr><td>Moisture</td><td>≤ 5%</td><td>≤ 5%</td></tr>
+      <tr><td>Colour</td><td>Light Pink to Reddish</td><td>Cream to Ivory White</td></tr>
+      <tr><td>Flavour</td><td>Strong, Pungent</td><td>Mild, Sweet</td></tr>
+      <tr><td>Shelf Life</td><td>24 Months</td><td>24 Months</td></tr>
+      <tr><td>Packaging</td><td colspan="2">25 kg PP Bags / Jumbo Bags / Custom</td></tr>
+    </table>
+  </div>
+  <div class="half prod-right">
+    <span class="sec-label">Product Range</span>
+    <div class="sec-title">Dehydrated Garlic</div>
+    <div class="sec-bar"></div>
+    <p class="body">Our dehydrated garlic is processed using advanced drying technology to retain maximum allicin content and intense aroma. Ideal for seasoning blends, sauces, soups, and ready-to-eat food products.</p>
+    <div class="prod-grid">
+      <div class="prod-card"><img src="b_garlic.png" alt="Garlic Flakes"><div class="card-label">Garlic Flakes</div></div>
+      <div class="prod-card"><img src="b_garlic_powder.png" alt="Garlic Powder"><div class="card-label">Garlic Powder</div></div>
+    </div>
+    <table class="spec-table">
+      <tr><th>Parameter</th><th>Specification</th></tr>
+      <tr><td>Forms Available</td><td>Flakes, Chopped, Minced, Granules, Powder</td></tr>
+      <tr><td>Moisture</td><td>≤ 6%</td></tr>
+      <tr><td>Colour</td><td>Creamy White to Light Yellow</td></tr>
+      <tr><td>Allicin Content</td><td>≥ 0.3%</td></tr>
+      <tr><td>Ash Content</td><td>≤ 5%</td></tr>
+      <tr><td>Shelf Life</td><td>24 Months</td></tr>
+      <tr><td>Packaging</td><td>25 kg PP Bags / Jumbo Bags / Custom</td></tr>
+    </table>
+    <h3 class="prod-sub">Target Markets</h3>
+    <p class="body">Our dehydrated products are exported to food manufacturers, spice traders, wholesalers, and importers across:</p>
+    <p class="body" style="font-weight:600;color:var(--g1)">UAE · USA · UK · EU · Saudi Arabia · Japan · Australia · Canada · Southeast Asia · Africa</p>
+    <p class="body" style="font-size:8pt;margin-top:auto"><strong>Container Load:</strong> 20-ft container = 18–20 MT | <strong>Port:</strong> Mundra, Gujarat</p>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 4: SPICES & HONEY ═══════ -->
+<div class="page">
+  <div class="half prod-left">
+    <span class="sec-label">Product Range</span>
+    <div class="sec-title">Premium Ground Spices</div>
+    <div class="sec-bar"></div>
+    <p class="body">Our spices are recognized for their vibrant colour, high essential oil content, and authentic aroma — produced from carefully selected crops, sun-dried, and ground to perfection under strict hygienic conditions.</p>
+    <div class="spice-grid">
+      <div class="spice-card"><img src="brochure_img1.png" alt="Red Chilli"><div class="card-label">Red Chilli Powder</div></div>
+      <div class="spice-card"><img src="b_turmeric.png" alt="Turmeric"><div class="card-label">Turmeric Powder</div></div>
+      <div class="spice-card"><img src="b_coriander.png" alt="Coriander"><div class="card-label">Coriander Powder</div></div>
+      <div class="spice-card"><img src="b_cumin.png" alt="Cumin"><div class="card-label">Cumin Powder</div></div>
+    </div>
+    <table class="spec-table">
+      <tr><th>Spice</th><th>Key Quality</th><th>Moisture</th><th>Shelf Life</th></tr>
+      <tr><td>Red Chilli Powder</td><td>High ASTA Colour Value</td><td>≤ 10%</td><td>18 Months</td></tr>
+      <tr><td>Turmeric Powder</td><td>High Curcumin (≥ 3%)</td><td>≤ 10%</td><td>18 Months</td></tr>
+      <tr><td>Coriander Powder</td><td>Rich Essential Oils</td><td>≤ 10%</td><td>18 Months</td></tr>
+      <tr><td>Cumin Powder</td><td>Intense Earthy Aroma</td><td>≤ 10%</td><td>18 Months</td></tr>
+    </table>
+    <p class="body" style="font-size:8pt"><strong>Packaging:</strong> 25 kg PP Bags / 50 kg Bags / Retail Packs / Private Labelling</p>
+  </div>
+  <div class="half prod-right">
+    <span class="sec-label">Product Range</span>
+    <div class="sec-title">Wild Forest Honey</div>
+    <div class="sec-bar"></div>
+    <p class="body">100% raw, unpasteurized, and free from artificial additives. Sourced from the pristine apiaries of Gujarat. Available in three premium variants for global export and retail markets.</p>
+    <div class="spice-grid" style="grid-template-columns:1fr 1fr 1fr">
+      <div class="spice-card"><img src="brochure_img3.png" alt="Raw Honey"><div class="card-label">Pure Raw</div></div>
+      <div class="spice-card"><img src="b_jeera_honey.png" alt="Raw Ajwain Honey"><div class="card-label">Raw Ajwain Honey</div></div>
+      <div class="spice-card"><img src="b_dryfruit_honey.png" alt="Dry Fruit Honey"><div class="card-label">Dry Fruits</div></div>
+    </div>
+    <table class="spec-table">
+      <tr><th>Variant</th><th>Colour</th><th>Moisture</th><th>Shelf Life</th></tr>
+      <tr><td>Pure Raw Honey</td><td>Golden Amber</td><td>≤ 20%</td><td>24 Months</td></tr>
+      <tr><td>Raw Ajwain Honey</td><td>Warm Amber</td><td>≤ 17%</td><td>18 Months</td></tr>
+      <tr><td>Dry Fruits Honey</td><td>Dark Amber</td><td>≤ 17%</td><td>18 Months</td></tr>
+    </table>
+    <p class="body"><strong>Applications:</strong> Health foods, breakfast spreads, gourmet cooking, wellness retail, premium gifting, bakery & confectionery.</p>
+    <h3 class="prod-sub">Quality Assurance</h3>
+    <ul class="check-list">
+      <li>FSSAI Registered — Food Safety Compliance</li>
+      <li>IEC Certified — Import/Export Code</li>
+      <li>APEDA Registered — Agricultural Export Authority</li>
+      <li>Compliant with international food safety standards</li>
+      <li>Rigorous lab testing before every shipment</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 5: WHY CHOOSE US & CTA ═══════ -->
+<div class="page">
+  <div class="half why-left">
+    <span class="sec-label">Why Choose Us</span>
+    <div class="sec-title">Your Trusted Export Partner</div>
+    <div class="sec-bar"></div>
+    <div class="benefit-item"><div class="benefit-num">1</div><div class="benefit-text"><h4>Premium Quality Sourcing</h4><p>All products sourced directly from the best growing regions of Gujarat, including Mahuva — India's onion and garlic capital.</p></div></div>
+    <div class="benefit-item"><div class="benefit-num">2</div><div class="benefit-text"><h4>Advanced Processing</h4><p>State-of-the-art dehydration and grinding facilities with cold-chain infrastructure to preserve freshness and nutrition.</p></div></div>
+    <div class="benefit-item"><div class="benefit-num">3</div><div class="benefit-text"><h4>Custom Packaging & Labelling</h4><p>Flexible packaging options — 25kg PP bags, jumbo bags, retail packs, and private label branding for your market.</p></div></div>
+    <div class="benefit-item"><div class="benefit-num">4</div><div class="benefit-text"><h4>Rigorous Quality Control</h4><p>Every batch undergoes stringent lab testing for moisture, colour, purity, and microbiology before shipment.</p></div></div>
+    <div class="benefit-item"><div class="benefit-num">5</div><div class="benefit-text"><h4>Competitive Pricing</h4><p>Direct farm-to-export model eliminates middlemen, ensuring the best prices without compromising quality.</p></div></div>
+    <div class="benefit-item"><div class="benefit-num">6</div><div class="benefit-text"><h4>Reliable Global Logistics</h4><p>Strategic location near Mundra Port enables fast, cost-effective shipping to 20+ countries worldwide.</p></div></div>
+  </div>
+  <div class="half why-right">
+    <span class="sec-label" style="color:var(--gold-l)">At a Glance</span>
+    <div class="sec-title white">PVS International</div>
+    <div class="sec-bar"></div>
+    <div class="stat-row">
+      <div class="stat-box"><div class="num">20+</div><div class="lbl">Countries</div></div>
+      <div class="stat-box"><div class="num">100%</div><div class="lbl">Natural</div></div>
+      <div class="stat-box"><div class="num">15+</div><div class="lbl">Products</div></div>
+    </div>
+    <p class="body white">We serve food manufacturers, restaurant chains, spice traders, wholesalers, and importers across the globe — building long-term partnerships through consistent quality and reliable supply.</p>
+    <div class="quote-block">
+      <p>"Quality from Farm to Global Market"</p>
+    </div>
+    <div class="contact-grid">
+      <span class="sec-label" style="color:var(--gold-l);margin-top:5mm">Get In Touch</span>
+      <div class="contact-row"><strong>Phone</strong><span>+91 90819 73308 / +91 94261 73308</span></div>
+      <div class="contact-row"><strong>Email</strong><span>pvsexporter@gmail.com</span></div>
+      <div class="contact-row"><strong>Web</strong><span>https://sites.google.com/view/pvs-international/home</span></div>
+    </div>
+    <div class="cta-box">
+      <h3>Request a Quote Today</h3>
+      <p>Contact us for bulk pricing, samples, and custom orders.</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

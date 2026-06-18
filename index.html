@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO Meta Tags -->
+  <title>PVS International | Premium Agricultural Exports & Food Products</title>
+  <meta name="description" content="PVS International is a leading global exporter of fresh agricultural products, dehydrated onions & garlic, ground spices, frozen pulps, ready-to-eat Gujarati delicacies, and organic honey.">
+  <meta name="keywords" content="PVS International, Agricultural Export, Dehydrated Onion, Dehydrated Garlic, Spices, Frozen Mango Pulp, Ready to Eat Food, Export India, Agrovia Enterprise">
+  <meta name="author" content="PVS International">
+  
+  <!-- Open Graph / Social Media Metas -->
+  <meta property="og:title" content="PVS International | Premium Agricultural Exports & Food Products">
+  <meta property="og:description" content="Explore high-quality agricultural produce, spices, dehydrated vegetables, and ready-to-eat products exporter. Quick WhatsApp inquiry available.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sites.google.com/view/pvs-international/home">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="assets/fresh_vegetables.png" type="image/x-icon">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header id="site-header">
+    <div class="nav-container">
+      <a href="#home" class="logo" id="logo-link">
+        <img src="Logo/pvs_international_logo_transparent.png" alt="PVS Logo" style="height: 40px; width: auto; vertical-align: middle; margin-right: 8px;">
+        PVS International
+      </a>
+      <nav class="nav-links" id="main-navigation">
+        <a href="#home" id="nav-home">Home</a>
+        <a href="#about" id="nav-about">About Us</a>
+        <a href="#products" id="nav-products">Our Products</a>
+        <a href="#applications" id="nav-applications">Applications</a>
+        <a href="#quality" id="nav-quality">Quality</a>
+        <a href="#contact" id="nav-contact">Contact Us</a>
+        <button class="btn btn-accent" id="nav-enquiry-btn" onclick="openGeneralInquiry()">Enquire Now</button>
+      </nav>
+      <button class="hamburger" id="mobile-menu-btn" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Let's Start a New Journey in the World of Import & Export</h1>
+      <p>Delivering premium agricultural produce, fresh & dehydrated vegetables, spices, organic honey, and frozen delicacies worldwide with absolute quality commitment.</p>
+      <div class="hero-btns">
+        <a href="#products" class="btn btn-accent" id="hero-explore-btn">Explore Our Products</a>
+        <a href="#contact" class="btn btn-outline" id="hero-contact-btn" style="border-color: white; color: white;">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="assets/combined_categories_showcase.png" alt="PVS International Sourcing" id="about-section-image">
+        </div>
+        <div class="about-content">
+          <h3>Sourcing Excellence, Exporting Globally</h3>
+          <p>At PVS International, we bridge the gap between premium local farms and the global market. Adhering to international quality standards, we ensure that every vegetable, fruit, spice, or packaged food product reaches you with its natural flavor, hygiene, and shelf-life fully preserved.</p>
+          <div class="features-grid">
+            <div class="feature-card" id="feat-natural">
+              <div class="feature-icon">✓</div>
+              <div class="feature-info">
+                <h4>100% Natural</h4>
+                <p>Pure, fresh, and handpicked quality directly from source farms.</p>
+              </div>
+            </div>
+            <div class="feature-card" id="feat-export">
+              <div class="feature-icon">✓</div>
+              <div class="feature-info">
+                <h4>Global Logistics</h4>
+                <p>Advanced temperature-controlled shipping & transport chains.</p>
+              </div>
+            </div>
+            <div class="feature-card" id="feat-support">
+              <div class="feature-icon">✓</div>
+              <div class="feature-info">
+                <h4>24/7 Service</h4>
+                <p>Dedicated support desk to resolve queries and updates in real-time.</p>
+              </div>
+            </div>
+            <div class="feature-card" id="feat-integrity">
+              <div class="feature-icon">✓</div>
+              <div class="feature-info">
+                <h4>Honesty & Integrity</h4>
+                <p>Transparent dealings, fair farm trade practices, and exact specifications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Product Showcase Section -->
+  <section class="products section-padding" id="products">
+    <div class="container">
+      <div class="section-header">
+        <h2>Interactive Product Catalog</h2>
+        <p>Browse through our wide spectrum of fresh, frozen, dehydrated, and packaged export-grade items. Filter by categories below.</p>
+      </div>
+
+      <!-- Main Category Tabs -->
+      <div class="catalog-tabs" id="catalog-main-tabs">
+        <button class="tab-btn active" data-tab="fresh-agri" id="tab-fresh-agri">Fresh Agriculture</button>
+        <button class="tab-btn" data-tab="grains-beans" id="tab-grains-beans">Grains & Beans</button>
+        <button class="tab-btn" data-tab="dehydrated-veg" id="tab-dehydrated-veg">Dehydrated Vegetables</button>
+        <button class="tab-btn" data-tab="spices-oils" id="tab-spices-oils">Spices, Honey & Oils</button>
+        <button class="tab-btn" data-tab="frozen" id="tab-frozen">Frozen Range</button>
+        <button class="tab-btn" data-tab="rte" id="tab-rte">Ready-to-Eat</button>
+      </div>
+
+      <!-- Nested Sub Category Tabs (Rendered/manipulated dynamically by JS) -->
+      <div class="sub-tabs-container" id="sub-tabs-container">
+        <!-- JS inserts buttons here dynamically -->
+      </div>
+
+      <!-- Products Display Grid -->
+      <div class="products-wrapper">
+        <div class="products-grid" id="products-grid">
+          <!-- JS inserts product cards here dynamically -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section class="applications section-padding" id="applications">
+    <div class="container">
+      <div class="section-header">
+        <h2>Industries & Applications</h2>
+        <p>Our premium products serve diverse manufacturing, processing, and consumer sectors globally.</p>
+      </div>
+      <div class="app-grid">
+        <div class="app-card" id="app-food-processing">
+          <img src="assets/dehydrated_onion_garlic.png" alt="Food Processing Industry">
+          <div class="app-overlay">
+            <h4>Food Processing</h4>
+            <p>Dehydrated ingredients and pulps for large scale packaged products.</p>
+          </div>
+        </div>
+        <div class="app-card" id="app-culinary">
+          <img src="assets/fresh_vegetables.png" alt="Culinary & Restaurants">
+          <div class="app-overlay">
+            <h4>Culinary & Hotels</h4>
+            <p>Fresh vegetables and gourmet ground spices for chef-grade kitchens.</p>
+          </div>
+        </div>
+        <div class="app-card" id="app-retail">
+          <img src="assets/natural_honey.png" alt="Retail & Supermarkets">
+          <div class="app-overlay">
+            <h4>Retail Supermarkets</h4>
+            <p>Ready-to-eat pouches, organic honey jars, and fresh table fruits.</p>
+          </div>
+        </div>
+        <div class="app-card" id="app-spice-blending">
+          <img src="assets/ground_spices.png" alt="Spice Blending & Seasoning">
+          <div class="app-overlay">
+            <h4>Spice Blending</h4>
+            <p>Premium ground single origin powders for seasonings and spice brands.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quality Commitment Section -->
+  <section class="quality section-padding" id="quality">
+    <div class="container">
+      <div class="section-header">
+        <h2>Uncompromised Quality & Value</h2>
+        <p>Following strict global export procedures and hygienic practices to supply safe and premium food products.</p>
+      </div>
+      <div class="quality-grid">
+        <div class="quality-card" id="quality-sourcing">
+          <div class="quality-icon">🔬</div>
+          <h4>Certified Sourcing</h4>
+          <p>All items sourced directly from partner farms following Good Agricultural Practices (GAP).</p>
+        </div>
+        <div class="quality-card" id="quality-hygiene">
+          <div class="quality-icon">🧼</div>
+          <h4>Hygiene Processing</h4>
+          <p>Processing and sorting done in state-of-the-art facilities compliant with FSSAI & HACCP.</p>
+        </div>
+        <div class="quality-card" id="quality-testing">
+          <div class="quality-icon">📋</div>
+          <h4>Lab Testing</h4>
+          <p>Strict parameter testing for moisture, residual pesticides, and microbiological values.</p>
+        </div>
+        <div class="quality-card" id="quality-traceability">
+          <div class="quality-icon">📦</div>
+          <h4>Complete Traceability</h4>
+          <p>End-to-end trace mapping from the harvest field to final delivery destination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Membership & Registration Section -->
+  <section class="membership section-padding" id="membership" style="background-color: var(--bg-white);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Membership & Registration</h2>
+        <p>PVS International is officially registered and certified by the leading agricultural and trade authorities of India.</p>
+      </div>
+      <div class="membership-logos" style="width: 100%; max-width: 950px; margin: 40px auto 0; text-align: center; border: 1px solid var(--border-color); border-radius: var(--radius-sm); background: white; overflow: hidden; box-shadow: var(--shadow-sm);">
+        <img src="assets/membership_logos.png" alt="APEDA, FSSAI, FIEO, Spices Board, Export Inspection Council, MSME" style="width: 100%; height: auto; display: block; margin: 0 auto;">
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials section-padding" id="testimonials" style="background-color: var(--bg-light);">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Happy Customers Say</h2>
+        <p>Trusted by food processors, wholesalers, and importers worldwide for quality, consistency, and reliability.</p>
+      </div>
+      <div class="testimonials-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 50px;">
+        <div class="testimonial-card" style="background: var(--bg-white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+          <p style="font-style: italic; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">"The dehydrated onion and garlic from PVS International have been a staple in our seasoning manufacturing. The pungency and low moisture content are perfectly consistent across shipments."</p>
+          <div class="user-info" style="display: flex; align-items: center; gap: 15px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">MK</div>
+            <div>
+              <h4 style="color: var(--text-dark); font-size: 1rem; margin-bottom: 2px;">Marcus Keller</h4>
+              <p style="color: var(--primary-light); font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Procurement Director, Germany</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" style="background: var(--bg-white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+          <p style="font-style: italic; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">"We import raw organic honey and spices from PVS International. Their packaging and quality parameters are exceptionally compliant with the EU food safety regulations. Highly recommended partner!"</p>
+          <div class="user-info" style="display: flex; align-items: center; gap: 15px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">AH</div>
+            <div>
+              <h4 style="color: var(--text-dark); font-size: 1rem; margin-bottom: 2px;">Al-Hassan Food Corp</h4>
+              <p style="color: var(--primary-light); font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Quality Lead, UAE</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card" style="background: var(--bg-white); padding: 30px; border-radius: var(--radius-md); box-shadow: var(--shadow-sm); border: 1px solid var(--border-color); display: flex; flex-direction: column; justify-content: space-between;">
+          <p style="font-style: italic; color: var(--text-muted); line-height: 1.7; margin-bottom: 20px;">"Excellent customer support. They assisted us with the customs paperwork and container shipping logistics from Mundra port smoothly. The fresh potatoes arrived in pristine condition."</p>
+          <div class="user-info" style="display: flex; align-items: center; gap: 15px;">
+            <div style="width: 48px; height: 48px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1.2rem;">SL</div>
+            <div>
+              <h4 style="color: var(--text-dark); font-size: 1rem; margin-bottom: 2px;">Seng Lee Imports</h4>
+              <p style="color: var(--primary-light); font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Managing Director, Singapore</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Have questions about container capacities, customs paperwork, or custom bulk packaging? Drop us a line.</p>
+      </div>
+      <div class="contact-grid">
+        <!-- Contact details -->
+        <div class="contact-info-panel" id="contact-info-panel">
+          <div>
+            <h3>PVS International</h3>
+            <div class="contact-details">
+              <div class="detail-item" id="info-whatsapp">
+                <div class="detail-icon">💬</div>
+                <div class="detail-content">
+                  <h4>WhatsApp & Call</h4>
+                  <a href="https://wa.me/919081973308" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none; display: block; margin-bottom: 4px;">+91 90819 73308</a>
+                  <a href="https://wa.me/919426173308" target="_blank" rel="noopener noreferrer" style="color: white; text-decoration: none; display: block;">+91 94261 73308</a>
+                </div>
+              </div>
+              <div class="detail-item" id="info-email">
+                <div class="detail-icon">✉️</div>
+                <div class="detail-content">
+                  <h4>Email Address</h4>
+                  <a href="mailto:pvsexporter@gmail.com" style="color: white; text-decoration: none;">pvsexporter@gmail.com</a>
+                </div>
+              </div>
+              <div class="detail-item" id="info-address">
+                <div class="detail-icon">📍</div>
+                <div class="detail-content">
+                  <h4>Operating Location</h4>
+                  <p>Tulsi Arcade, Mota Varachha, Surat, Gujarat, India.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="social-links" id="social-links-container">
+            <a href="https://www.facebook.com/profile.php?id=61564711752450&mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;"><path d="M9 8H7v3h2v9h4v-9h3.6l.4-3H13V6c0-.5.5-1 1-1h2V1h-3c-3 0-5 2-5 5v2z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/pvs_intertational_?igsh=MXRuMjNlbGR0M2x3NQ==" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/sachin-lambhiya-1b3b31266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; fill: currentColor;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form" id="contact-form-container">
+          <!-- Connect your Formspree by replacing action="#" with action="https://formspree.io/f/your-id" -->
+          <form id="contact-form" action="https://formspree.io/f/xjgddqjy" method="POST">
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <input type="text" id="contact-name" name="name" class="form-control" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <input type="email" id="contact-email" name="email" class="form-control" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-phone">Phone Number (with country code)</label>
+              <input type="tel" id="contact-phone" name="phone" class="form-control" placeholder="+91 9979089901" required>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message Details</label>
+              <textarea id="contact-message" name="message" class="form-control" placeholder="Specify requirements, product list, and volumes..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;" id="contact-submit-btn">Send Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>PVS International</h3>
+          <p style="margin-top: 12px; margin-bottom: 20px;">Premium exporters of fresh agricultural produce, dehydrated ingredients, gourmet spices, and convenient retort foods from India to the world.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#quality">Quality System</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Product Lines</h4>
+          <ul>
+            <li><a href="#products">Fresh Fruits & Veg</a></li>
+            <li><a href="#products">Dehydrated Onion/Garlic</a></li>
+            <li><a href="#products">Indian Spices</a></li>
+            <li><a href="#products">Frozen Mango Pulp</a></li>
+            <li><a href="#products">Ready-to-Eat Food</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Newsletter & General Inquiry</h4>
+          <p style="margin-bottom: 16px;">Contact us for our wholesale rates brochure and custom quotes.</p>
+          <button class="btn btn-accent" style="width: 100%;" onclick="openGeneralInquiry()" id="footer-inquiry-trigger">Request Brochure</button>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 PVS International. All Rights Reserved.</p>
+        <p>Sourced & Processed in Gujarat, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Details Modal Popup -->
+  <div class="modal" id="product-details-modal">
+    <div class="modal-content product-modal-content">
+      <button class="modal-close details-close" aria-label="Close modal" id="details-close-btn">&times;</button>
+      <div class="product-details-grid">
+        <div class="product-details-img-col">
+          <img id="details-img" src="" alt="Product Image">
+        </div>
+        <div class="product-details-info-col">
+          <h3 id="details-title">Product Title</h3>
+          <p id="details-description" style="margin-bottom: 20px;">Product description goes here.</p>
+          
+          <div class="details-specs-grid" id="details-specs-grid">
+            <!-- Dynamic specs cards -->
+          </div>
+          
+          <div class="details-applications-section">
+            <h4>Applications</h4>
+            <div class="details-tags" id="details-tags">
+              <!-- Dynamic tags -->
+            </div>
+          </div>
+          
+          <div class="details-ctas" style="display: flex; gap: 12px; margin-top: 24px;">
+            <button class="btn btn-primary" id="details-quote-btn" style="flex: 1;">Request Quote</button>
+            <a href="#" id="details-whatsapp-btn" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; text-decoration: none; border-radius: var(--radius-sm); flex-shrink: 0; padding: 0;" title="Inquire on WhatsApp">
+              <svg viewBox="0 0 24 24" style="width: 24px; height: 24px; fill: currentColor;"><path d="M12.012 2c-5.506 0-9.989 4.478-9.99 9.984a9.96 9.96 0 0 0 1.333 4.982L2 22l5.233-1.372a9.923 9.923 0 0 0 4.777 1.22c5.508 0 9.99-4.478 9.99-9.985C22.002 6.478 17.518 2 12.012 2zm6.056 14.157c-.266.753-1.536 1.393-2.112 1.48-.488.073-1.127.133-3.267-.753-2.735-1.132-4.48-3.918-4.618-4.103-.137-.184-1.123-1.492-1.123-2.846 0-1.354.708-2.014.962-2.28.254-.266.554-.332.738-.332.185 0 .37 0 .532.008.17.008.397-.066.623.473.226.541.777 1.892.845 2.03.067.137.112.298.022.478-.09.18-.135.29-.271.45-.136.162-.284.363-.406.486-.135.136-.277.285-.12.554.158.269.7.155 1.5 1.868 1.018.906 1.874 1.186 2.14 1.32.266.136.42.113.578-.067.157-.18.677-.788.857-1.058.18-.27.36-.226.608-.135.248.09 1.57.738 1.84.873.27.136.45.203.518.316.068.113.068.654-.198 1.407z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Inquiry Form Popup -->
+  <div class="modal" id="inquiry-modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close modal">&times;</button>
+      <h3 style="margin-bottom: 8px; color: var(--primary-dark);" id="modal-title">Product Inquiry</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 20px;">Please share your requirements and we will send a custom quote.</p>
+      
+      <!-- Connect your Formspree by replacing action="#" with action="https://formspree.io/f/your-id" -->
+      <form id="modal-inquiry-form" action="https://formspree.io/f/xjgddqjy" method="POST">
+        <div class="form-group">
+          <label for="inquiry-subject">Product Subject</label>
+          <input type="text" id="inquiry-subject" name="subject" class="form-control" readonly>
+        </div>
+        <div class="form-group">
+          <label for="inquiry-name">Full Name</label>
+          <input type="text" id="inquiry-name" name="name" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="inquiry-phone">Phone / WhatsApp Number</label>
+          <input type="tel" id="inquiry-phone" name="phone" class="form-control" placeholder="+91" required>
+        </div>
+        <div class="form-group">
+          <label for="inquiry-email">Email Address</label>
+          <input type="email" id="inquiry-email" name="email" class="form-control" placeholder="john@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="inquiry-details">Additional Specifications & Volume</label>
+          <textarea id="inquiry-details" name="message" class="form-control" placeholder="Specify packaging details, port of delivery, or estimated monthly volume..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width: 100%;" id="modal-submit-btn">Submit Inquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">Form submitted successfully!</div>
+
+  <!-- Interaction Logic Script -->
+  <script src="app.js"></script>
+</body>
+</html>

@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
     // Simple bar animation
     const spans = hamburger.querySelectorAll('span');
     spans[0].style.transform = navLinks.classList.contains('active') ? 'rotate(45deg) translate(6px, 6px)' : 'none';
@@ -26,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
   navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       navLinks.classList.remove('active');
+      hamburger.classList.remove('active');
       const spans = hamburger.querySelectorAll('span');
       spans[0].style.transform = 'none';
       spans[1].style.opacity = '1';

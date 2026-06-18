@@ -272,6 +272,10 @@ header:not(.scrolled) .hamburger span {
   background-color: var(--bg-white);
 }
 
+.hamburger.active span {
+  background-color: #ff3333 !important;
+}
+
 /* Hero Section */
 .hero {
   height: 90vh;

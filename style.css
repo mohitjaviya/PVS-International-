@@ -273,7 +273,7 @@ header:not(.scrolled) .hamburger span {
 }
 
 .hamburger.active span {
-  background-color: #ff3333 !important;
+  background-color: var(--text-dark) !important;
 }
 
 /* Hero Section */

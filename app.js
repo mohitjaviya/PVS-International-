@@ -620,7 +620,7 @@ const productsData = [
     subCategory: 'garlic',
     title: 'Dehydrated Minced Garlic',
     description: 'Dehydrated minced garlic particles, perfect for adding texture and rich flavor to sauces.',
-    image: 'public/garlic_minced-B_KMbAEM.png',
+    image: 'assets/garlic_minced-B_KMbAEM.png',
     specs: {
       'Size': '1 - 3 mm',
       'Shelf Life': '24 Months',
@@ -632,7 +632,7 @@ const productsData = [
     subCategory: 'garlic',
     title: 'Dehydrated Chopped Garlic',
     description: 'Coarsely chopped premium garlic cloves dried to preserve authentic flavor and pungency.',
-    image: 'public/garlic_chopped-BxQ_ME93.png',
+    image: 'assets/garlic_chopped-BxQ_ME93.png',
     specs: {
       'Size': '3 - 5 mm',
       'Shelf Life': '24 Months',
@@ -644,7 +644,7 @@ const productsData = [
     subCategory: 'garlic',
     title: 'Dehydrated Garlic Flakes',
     description: 'Premium quality garlic flakes sliced and dehydrated to secure raw properties and aroma.',
-    image: 'public/garlic_flakes--UwdcNcq.png',
+    image: 'assets/garlic_flakes--UwdcNcq.png',
     specs: {
       'Size': '5 - 8 mm',
       'Shelf Life': '24 Months',
@@ -656,7 +656,7 @@ const productsData = [
     subCategory: 'garlic',
     title: 'Dehydrated Garlic Powder',
     description: 'Finely ground dehydrated garlic, perfect for seasonings, spice mixes, and processed foods.',
-    image: 'public/garlic_powder-DVW-8wSy.png',
+    image: 'assets/garlic_powder-DVW-8wSy.png',
     specs: {
       'Texture': '60 - 80 Mesh',
       'Shelf Life': '24 Months',
@@ -670,7 +670,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated Pink Onion - Minced',
     description: 'Minced pink onion flakes offering a balanced sweet and sharp onion profile.',
-    image: 'public/pink_onion_minced-Dy0u_O9F.png',
+    image: 'assets/pink_onion_minced-Dy0u_O9F.png',
     specs: {
       'Size': '1 - 3 mm',
       'Shelf Life': '24 Months',
@@ -682,7 +682,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated Pink Onion - Chopped',
     description: 'Chopped pink onion pieces processed to retain full nutrients.',
-    image: 'public/pink_onion_chopped-BRuMVXYI.png',
+    image: 'assets/pink_onion_chopped-BRuMVXYI.png',
     specs: {
       'Size': '3 - 5 mm',
       'Shelf Life': '24 Months',
@@ -694,7 +694,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated Pink Onion - Flakes',
     description: 'Crispy, sweet pink onion flakes, dried under strict hygiene standards.',
-    image: 'public/onion_flakes-OqIAGFsV.png',
+    image: 'assets/onion_flakes-OqIAGFsV.png',
     specs: {
       'Size': '5 - 8 mm',
       'Shelf Life': '24 Months',
@@ -706,7 +706,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated Pink Onion - Powder',
     description: 'Vibrant pink onion powder with long-lasting freshness, ideal for soups and rubs.',
-    image: 'public/onion_powder-BzFahdGF.png',
+    image: 'assets/onion_powder-BzFahdGF.png',
     specs: {
       'Texture': '60 - 80 Mesh',
       'Shelf Life': '24 Months',
@@ -718,7 +718,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated White Onion - Minced',
     description: 'Minced white onion bits, premium quality for seasonings and processed products.',
-    image: 'public/white_onion_minced-sA2RlNAz.png',
+    image: 'assets/white_onion_minced-sA2RlNAz.png',
     specs: {
       'Size': '1 - 3 mm',
       'Shelf Life': '24 Months',
@@ -730,7 +730,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated White Onion - Chopped',
     description: 'Finely chopped clean white onion pieces, dehydrated without losing original strong aroma.',
-    image: 'public/white_onion_chopped-CG8LUZpt.png',
+    image: 'assets/white_onion_chopped-CG8LUZpt.png',
     specs: {
       'Size': '3 - 5 mm',
       'Shelf Life': '24 Months',
@@ -742,7 +742,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated White Onion - Flakes',
     description: 'Perfect white onion flakes dried in clean chambers to retain maximum flavor profiles.',
-    image: 'public/white_onion_flakes-iKP0HR3u.png',
+    image: 'assets/white_onion_flakes-iKP0HR3u.png',
     specs: {
       'Size': '5 - 8 mm',
       'Shelf Life': '24 Months',
@@ -754,7 +754,7 @@ const productsData = [
     subCategory: 'onion',
     title: 'Dehydrated White Onion - Powder',
     description: 'Pure dehydrated white onion powder, imparting robust flavor without the moisture.',
-    image: 'public/white_onion_powder-zA6cJrZW.png',
+    image: 'assets/white_onion_powder-zA6cJrZW.png',
     specs: {
       'Texture': '60 - 80 Mesh',
       'Shelf Life': '24 Months',
@@ -768,7 +768,7 @@ const productsData = [
     subCategory: 'spices',
     title: 'Cumin Seeds',
     description: 'Premium grade aromatic cumin seeds with high essential oil content.',
-    image: 'public/cumin_powder-DTskBB16.png',
+    image: 'assets/cumin_powder-DTskBB16.png',
     specs: {
       'Shelf Life': '1 Year',
       'Purity': '99% min',
@@ -780,7 +780,7 @@ const productsData = [
     subCategory: 'spices',
     title: 'Turmeric',
     description: 'Bright golden yellow turmeric fingers and powder with high curcumin content.',
-    image: 'public/turmeric_powder-B6a3FlL0.png',
+    image: 'assets/turmeric_powder-B6a3FlL0.png',
     specs: {
       'Shelf Life': '1 Year',
       'Curcumin': 'High grade',
@@ -792,7 +792,7 @@ const productsData = [
     subCategory: 'spices',
     title: 'Chilly Pepper',
     description: 'Vibrant red chilli peppers with high pungency and color values.',
-    image: 'public/red_chilli_powder-B9lQ_YRs.png',
+    image: 'assets/red_chilli_powder-B9lQ_YRs.png',
     specs: {
       'Shelf Life': '1 Year',
       'Type': 'Stem / Stemless',
@@ -828,7 +828,7 @@ const productsData = [
     subCategory: 'spices',
     title: 'Coriander Seeds',
     description: 'Earthy and citrusy coriander seeds processed cleanly for culinary uses.',
-    image: 'public/coriander_powder-DKl9QXs2.png',
+    image: 'assets/coriander_powder-DKl9QXs2.png',
     specs: {
       'Shelf Life': '1 Year',
       'Form': 'Whole seeds',
@@ -916,7 +916,7 @@ const productsData = [
     subCategory: 'honey',
     title: 'Wild Forest Honey',
     description: 'Raw, organic forest honey containing natural antioxidants and sweetness.',
-    image: 'public/natural_honey-Bjxadl0l.png',
+    image: 'assets/natural_honey-Bjxadl0l.png',
     specs: {
       'Shelf Life': '24 Months',
       'Type': 'Raw Unfiltered',
@@ -928,7 +928,7 @@ const productsData = [
     subCategory: 'honey',
     title: 'Jeera Honey',
     description: 'Raw forest honey infused with aromatic cumin seed extracts.',
-    image: 'public/jeera_honey-DeujmOCw.png',
+    image: 'assets/jeera_honey-DeujmOCw.png',
     specs: {
       'Shelf Life': '24 Months',
       'Ingredients': 'Honey, Cumin',
@@ -940,7 +940,7 @@ const productsData = [
     subCategory: 'honey',
     title: 'Dry Fruits Enriched Honey',
     description: 'Natural honey enriched with almonds, cashews, raisins, and walnuts.',
-    image: 'public/dry_fruits_honey-CooXyHpI.png',
+    image: 'assets/dry_fruits_honey-CooXyHpI.png',
     specs: {
       'Shelf Life': '18 Months',
       'Ingredients': 'Honey, Mixed Nuts',
